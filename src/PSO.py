@@ -40,3 +40,7 @@ def f(x, target_location):
     # Assuming the target location is at (0, 0)
     return np.sum(np.abs(x - target_location))
 
+def f1(x, target_location):
+    distance = np.linalg.norm(x - target_location)
+    return distance 
+
