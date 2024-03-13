@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import PSO
 
-
+# testitron
 # this code is from the matlab version converted into python
 def ackley(xx):
     a = 20
