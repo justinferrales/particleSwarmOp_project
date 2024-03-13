@@ -35,7 +35,7 @@ def runUAVSwarm(numParticles, numIterations, x, v, w, phi_p, phi_g, targetLocati
             particle.updateVelocity(g)
             particle.updatePosition()
             particle.updateValue(targetLocation)
-            if particle.value < PSO.f1(g, targetLocation):
+            if particle.value < PSO.f(g, targetLocation):
                 g = particle.x.copy()
                 positionVals.append(g)
             ax.plot(particle.x[0], particle.x[1], 'o')
@@ -50,5 +50,5 @@ def runUAVSwarm(numParticles, numIterations, x, v, w, phi_p, phi_g, targetLocati
     ax.set_title('Particle Swarm Optimization - Iterations')
     plt.show()
     
-runUAVSwarm(10, 50, 50, 5, 0.8, 0.1, 0.1, np.array([-30, 10]))
+runUAVSwarm(10, 50, 10, 5, 0.8, 0.1, 0.1, np.array([-10, 10]))
         
