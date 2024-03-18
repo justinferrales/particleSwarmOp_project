@@ -65,5 +65,5 @@ def runUAVSwarm(numParticles, numIterations, x, v, w, phi_p, phi_g, targetLocati
     plt.show()
     
 # Calls function with determined area to search, target location,...
-runUAVSwarm(10, 50, 10, 5, 0.8, 0.1, 0.1, np.array([-10, 10]))
+runUAVSwarm(5, 10, 100, 5, 0.8, 0.1, 0.1, np.array([-10, 10]))
         
